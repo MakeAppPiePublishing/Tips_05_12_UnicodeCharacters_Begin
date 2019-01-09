@@ -9,12 +9,15 @@
 import UIKit
 
 class ViewController: UIViewController {
+    var yummy = "D\u{1f369}ugh\u{20d7}n\u{20ed}uts"
 
+    @IBOutlet weak var label: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        label.text = yummy
     }
-
 
 }
 
